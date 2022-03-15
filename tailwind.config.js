@@ -2,6 +2,9 @@ module.exports = {
   content: ['*.{html,js}'],
   theme: {
     extend: {
+      fontFamily: {
+        lato: ["Lato, sans-serif"]
+      },
       colors: {
         brand: {
           DEFAULT: '#009FE3',
