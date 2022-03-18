@@ -9,9 +9,9 @@
   <body class="font-lato">
     <!--header-->
     <header class="sticky top-0 z-30 bg-white shadow-xl">
-      <nav class="container flex justify-center py-4 mt-4">
+      <nav class="hidden container sm:flex justify-center py-4 mt-4">
         <a href="#"><img alt="logo Konin Business Meeting" class="md:h-32 h-24 px-4" src="./img/logo_KBM.svg"/></a>
-        <ul class="hidden sm:flex flex-1 space-x-8 uppercase text-brand-600 font-bold text-lg justify-end self-end">
+        <ul class="sm:flex flex-1 space-x-8 uppercase text-brand-600 font-bold text-lg justify-end self-end">
           <li><a class="hover:text-brand-300 transition duration-300" href="#conference">konferencja</a></li>
           <li><a class="hover:text-brand-300 transition duration-300" href="#topics">tematy</a></li>
           <li><a class="hover:text-brand-300 transition duration-300" href="#agenda">agenda</a></li>
@@ -19,6 +19,29 @@
           <li><a class="hover:text-brand-300 transition duration-300" href="#contact">kontakt</a></li>
         </ul>
       </nav>
+      <nav class="container sm:hidden flex flex-col py-4 mt-4 uppercase text-brand-600 font-bold text-lg">
+        <div class="flex flex-row justify-between items-start">
+          <a href="#"><img alt="logo Konin Business Meeting" class="md:h-32 h-24 px-4" src="./img/logo_KBM.svg"/></a>
+          <button id="js-toggle-menu">
+            <svg  xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+          <button id="js-close-menu" class="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>               
+          </button>       
+        </div>
+        <div id="js-menu" class="hidden flex-col">
+          <a class="border-b-2 p-4 hover:text-brand-300 transition duration-300" href="#conference">konferencja</a>
+          <a class="border-b-2 p-4 hover:text-brand-300 transition duration-300" href="#topics">tematy</a>
+          <a class="border-b-2 p-4 hover:text-brand-300 transition duration-300" href="#agenda">agenda</a>
+          <a class="border-b-2 p-4 hover:text-brand-300 transition duration-300" href="#tickets">bilety</a>
+          <a class="p-4 hover:text-brand-300 transition duration-300" href="#contact">kontakt</a>
+        </div>
+
+      </nav>      
     </header>
     <!--hero-->
     <section class="bg-brand">
