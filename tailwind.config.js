@@ -3,7 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        lato: ["Lato, sans-serif"]
+        lato: ["Lato, sans-serif"],
+        poppins: ["Poppins, sans-serif"]
       },
       colors: {
         brand: {

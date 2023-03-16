@@ -1,5 +1,5 @@
 {
-  "name": "konin-business-meeting-2022",
+  "name": "konin-business-meeting-2023",
   "private": true,
   "version": "0.0.0",
   "scripts": {
@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^2.8.0"
+    "vite": "^4.1.4"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
